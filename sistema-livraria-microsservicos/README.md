@@ -40,6 +40,3 @@ Inicie `cambio-service` antes de `book-service`, pois o serviço de livros consu
 
 ## Estrutura e tratamento de erros
 Cada serviço possui pacotes `controller`, `model`, `repository`, `service`, `exception` e `handle`. O pacote `handle` contém um `GlobalExceptionHandler` para respostas HTTP de erro. As migrações de banco ficam em `src/main/resources/db/migration`.
-
-## GitHub
-Envie a pasta `micro-livraria` para um repositório GitHub. O projeto inclui código e scripts versionados para criação e população dos bancos. Não contém senhas reais; altere as credenciais para seu ambiente.
