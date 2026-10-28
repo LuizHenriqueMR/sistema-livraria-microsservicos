@@ -1,0 +1,1 @@
+CREATE TABLE tb_cambio (id BIGINT NOT NULL AUTO_INCREMENT, from_currency VARCHAR(3) NOT NULL, to_currency VARCHAR(3) NOT NULL, conversion_factor DOUBLE NOT NULL, PRIMARY KEY (id), UNIQUE KEY uk_cambio_moedas (from_currency,to_currency));

@@ -1,0 +1,7 @@
+package br.com.livraria.cambio.handle;
+import br.com.livraria.cambio.exception.RecursoNaoEncontradoException;
+import org.springframework.http.*; import org.springframework.web.bind.annotation.*; import java.time.LocalDateTime; import java.util.Map;
+@RestControllerAdvice public class GlobalExceptionHandler {
+ @ExceptionHandler(RecursoNaoEncontradoException.class) public ResponseEntity<Map<String,Object>> notFound(RecursoNaoEncontradoException e){return ResponseEntity.status(404).body(Map.of("dataHora",LocalDateTime.now().toString(),"status",404,"erro",e.getMessage()));}
+ @ExceptionHandler(Exception.class) public ResponseEntity<Map<String,Object>> general(Exception e){return ResponseEntity.status(500).body(Map.of("dataHora",LocalDateTime.now().toString(),"status",500,"erro","Erro interno ao processar a requisição"));}
+}

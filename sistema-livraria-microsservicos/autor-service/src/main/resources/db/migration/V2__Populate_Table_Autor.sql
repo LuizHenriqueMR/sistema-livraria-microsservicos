@@ -1,0 +1,1 @@
+INSERT INTO tb_autor (nome,nacionalidade) VALUES ('Machado de Assis','Brasileira'),('Clarice Lispector','Brasileira'),('José Saramago','Portuguesa');

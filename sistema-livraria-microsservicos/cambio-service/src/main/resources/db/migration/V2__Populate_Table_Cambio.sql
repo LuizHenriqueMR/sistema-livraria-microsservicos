@@ -1,0 +1,1 @@
+INSERT INTO tb_cambio (from_currency,to_currency,conversion_factor) VALUES ('USD','BRL',5.73),('USD','EUR',0.92),('USD','GBP',0.79),('BRL','USD',0.1745),('EUR','USD',1.0870);

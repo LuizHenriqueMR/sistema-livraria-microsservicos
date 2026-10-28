@@ -1,0 +1,1 @@
+package br.com.livraria.autor.repository; import br.com.livraria.autor.model.Autor; import org.springframework.data.jpa.repository.JpaRepository; public interface AutorRepository extends JpaRepository<Autor,Long>{}

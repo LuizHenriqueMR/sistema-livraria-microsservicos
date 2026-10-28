@@ -1,0 +1,1 @@
+package br.com.livraria.book.repository; import br.com.livraria.book.model.Categoria; import org.springframework.data.jpa.repository.JpaRepository; public interface CategoriaRepository extends JpaRepository<Categoria,Long>{}

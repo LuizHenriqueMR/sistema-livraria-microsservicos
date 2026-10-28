@@ -1,0 +1,1 @@
+package br.com.livraria.autor.exception; public class RecursoNaoEncontradoException extends RuntimeException { public RecursoNaoEncontradoException(String mensagem){super(mensagem);} }
